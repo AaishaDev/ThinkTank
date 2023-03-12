@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./dashboard-script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Think Tank</title>
+  </head>
+
+  <body>
+    <header class="dash-nav">
+      <nav>
+        <div class="logo blue">Think <span class="pink">Tank</span></div>
+        <div class="user">
+          <div class="avatar">
+            <img src="./images/avatar-blue.svg" alt="" />
+          </div>
+          <p class="username"></p>
+        </div>
+      </nav>
+    </header>
+    <div id="notify" class="notify">Target Inneer Html</div>
+    <section class="dashboard-section">
+      <div class="dash-menus">
+        <div class="dash-welcome">
+          <p>Hi, <span class="blue username"></span></p>
+          <p class="online">Online</p>
+        </div>
+        <div class="dash-menu-items">
+          <div onclick="sideFavClick()" class="favourite">
+            <span class="material-symbols-outlined pl14"> favorite </span>
+            <p>Favourite</p>
+          </div>
+          <div class="settings">
+            <span class="material-symbols-outlined pl14"> settings </span>
+            <p>Settings</p>
+          </div>
+
+          <div onclick="logout()" class="logout">
+            <span class="material-symbols-outlined pl14"> logout </span>
+            <p>Logout</p>
+          </div>
+        </div>
+        <div class="girl-writing">
+          <img src="./images/girl-write.svg" alt="" />
+        </div>
+      </div>
+      <div id="dash-main" class="dash-main">
+        <div class="ps5">
+          <div class="dash-head">
+            <div id="add-note" class="add-note">
+              <span class="fs18">+</span>
+              <p>Add Note</p>
+            </div>
+            <!-- <div class="search-note">
+            <input class="dash-input" type="text" placeholder="Search notes" />
+            <span class="material-symbols-outlined"> search </span>
+          </div> -->
+          </div>
+        </div>
+
+        <div class="notes-container">
+          <div class="category">
+            <div id="all">
+              <p>All</p>
+            </div>
+            <div id="favorite">
+              <span class="material-symbols-outlined fs18"> favorite </span>
+              <p>Favourites</p>
+            </div>
+          </div>
+          <div id="loader">
+            <div class="three-dots">
+              <div class="_1"></div>
+              <div class="_2"></div>
+              <div class="_3"></div>
+            </div>
+          </div>
+          <div id="all-notes-container" class="notes"></div>
+        </div>
+      </div>
+      <div id="dash-text-field-container" class="dash-text-field-container">
+        <div>
+          <div class="note-title">
+            <input id="note-title" type="text" placeholder="Enter Title Here" />
+          </div>
+          <div class="note-content">
+            <textarea
+              id="note-content"
+              type="text"
+              placeholder="Enter Content Here"
+            ></textarea>
+          </div>
+          <button onclick="createNote(event)">Add</button>
+        </div>
+      </div>
+    </section>
+    <div id="note-edit-container" class="note-edit-container">
+      <div>
+        <div class="note-title">
+          <input
+            id="note-title-edit"
+            type="text"
+            placeholder="Enter Title Here"
+          />
+        </div>
+        <div class="note-content">
+          <textarea
+            id="note-content-edit"
+            type="text"
+            placeholder="Enter Content Here"
+          ></textarea>
+        </div>
+        <button onclick="editNote(event)">Done</button>
+      </div>
+    </div>
+    <script></script>
+    
+  </body>
+</html>

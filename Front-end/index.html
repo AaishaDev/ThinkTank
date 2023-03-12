@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, block-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="./script.js"></script>
+    <title>Think Tank</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Think <span class="pink">Tank</span></div>
+        <div class="menu">
+          <button id="login-button">Login</button>
+          <button id="sign-up-button" class="signup">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+    
+    </div>
+    <div id="notify" class="notify">Target Inneer Html</div>
+    <section class="hero">
+      <div class="left">
+        <div class="three-dots">
+          <div class="_1"></div>
+          <div class="_2"></div>
+          <div class="_3"></div>
+        </div>
+        <div class="heading">
+          The Ultimate <br />
+          <span class="blue">Note Taking App</span>
+        </div>
+        <div class="sub-heading">
+          The ultimate note-taking app designed to help you streamline <br class="none"/>
+          your note-taking process and stay organized.
+        </div>
+        <button id="get-started" class="get-started">Get Started </button>
+      </div>
+      <div class="right">
+        <div class="box">
+          <div class="heading">
+            <p>
+              Capture <br />
+              Ideas
+            </p>
+
+            <div class="three-dots">
+              <div class="_1"></div>
+              <div class="_2"></div>
+              <div class="_3"></div>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="circle-girl">
+              <img src="./images/circle_girl.png" alt="" />
+            </div>
+            <div class="blank blank-1"></div>
+          </div>
+          <div>
+            <div class="point">
+              <div class="circle"></div>
+              <p>Seamless syncing</p>
+            </div>
+            <div class="point">
+              <div class="circle"></div>
+              <p>Secure storage</p>
+            </div>
+          </div>
+          <div class="blanks">
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="login-section" class="login-section">
+      <div class="login">
+        <div class="left">
+          <div class="sitting-girl">
+            <img src="./images/sitting girl.png" alt="" />
+          </div>
+          <p>
+            Centralized and efficient way to capture, organize, and access your
+            notes.
+          </p>
+        </div>
+        <div class="right">
+          <div id="login-content" class="login-container">
+            <p class="heading">Login</p>
+            <div class="container">
+              <div>
+                <img src="./images/avatar.svg" alt="" />
+                <input
+                  name="username"
+                  type="text"
+                  placeholder="Type your username"
+                />
+              </div>
+              <div>
+                <img src="./images/lock.svg" alt="" />
+                <input
+                  name="password"
+                  type="password"
+                  placeholder="Type your password"
+                />
+              </div>
+              <button onclick="loginControl(event)" id="login-form-control">
+                Login
+              </button>
+
+              <p>
+                Don't have an account?
+                <span id="login-link" class="blue"> Sign Up</span>
+              </p>
+            </div>
+          </div>
+          <div id="signup-content" class="login-container">
+            <p class="heading">Sign Up</p>
+            <div class="container">
+              <div>
+                <img src="./images/avatar.svg" alt="" />
+                <input
+                  name="username"
+                  type="text"
+                  placeholder="Type your username"
+                />
+              </div>
+              <div>
+                <img src="./images/lock.svg" alt="" />
+                <input
+                  name="password"
+                  type="password"
+                  placeholder="Type your password"
+                />
+              </div>
+              <button onclick="signUpControl(event)" id="signup-form-control">
+                Sign Up
+                
+              </button>
+
+              <p>
+                Already have an account?
+                <span id="sign-up-link" class="blue"> Login</span>
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+  </body>
+</html>
