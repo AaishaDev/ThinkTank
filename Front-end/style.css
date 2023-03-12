@@ -6,6 +6,7 @@
   --gray: #7b7b7b;
   --white: #f1f1f1;
   --nav-pink: #e68a9f;
+  overflow-x: hidden;
 }
 *,
 *::before,
@@ -495,7 +496,7 @@ body::-webkit-scrollbar {
   align-items: center;
   gap: 1rem;
   font-weight: 600;
-  font-size: 16px;
+  /* font-size: 16px; */
   color: var(--dark-black);
   padding: 5% 0;
 }
@@ -611,7 +612,7 @@ body::-webkit-scrollbar {
   padding: 1.5rem;
   background: #e0ceec;
   border-radius: 8px;
-  height: 40vh;
+  height: 252px;
   overflow: hidden;
   position: relative;
 }
@@ -889,7 +890,7 @@ body::-webkit-scrollbar {
     flex: 12;
   }
   .dash-menus {
-    flex: 1.4;
+    flex: 2;
     height: 100vh;
   }
   .dash-head {
@@ -924,9 +925,12 @@ body::-webkit-scrollbar {
     padding: 1rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .dash-nav .log {
     font-size: 1.2rem;
+  }
+  .notes-container{
+    margin-bottom: 2.5rem;
   }
   section.hero:before {
     top: -17%;
@@ -972,5 +976,8 @@ body::-webkit-scrollbar {
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 5rem;
+  }
+  .login-section .login .right .container{
+    width: 300px;
   }
 }
