@@ -423,7 +423,7 @@ button:hover,
   align-items: center;
 }
 .login-section .login .right .container button {
-  background-color: var(--nav-pink);
+  background-color: var(--pink);
   color: white;
   border-radius: 4px;
 }
@@ -499,6 +499,8 @@ body::-webkit-scrollbar {
   /* font-size: 16px; */
   color: var(--dark-black);
   padding: 5% 0;
+  cursor: pointer;
+
 }
 .dash-menu-items > div:hover {
   color: white !important;
@@ -575,6 +577,7 @@ body::-webkit-scrollbar {
   border-radius: 30px;
   padding: 1rem;
   padding: 6px 26px;
+  cursor: pointer;
 }
 
 .notes-container .category > div:hover {
@@ -615,6 +618,7 @@ body::-webkit-scrollbar {
   height: 252px;
   overflow: hidden;
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
 .note > div:nth-child(1) {
   display: flex;
@@ -881,6 +885,7 @@ body::-webkit-scrollbar {
   }
   .notes-container .category > div {
     font-size: 11px;
+    cursor: pointer;
   }
   .dash-menu-items p {
     display: none;

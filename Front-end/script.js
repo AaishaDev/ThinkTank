@@ -1,7 +1,9 @@
+onload();
 const signup = document.getElementById("signup-content");
 const login = document.getElementById("login-content");
 const loginSection = document.getElementById("login-section");
 const notify = document.getElementById('notify')
+
 
 
 // Login button click triggered
@@ -161,5 +163,14 @@ async function loginRequest(data, e) {
 }
 
 
+async function onload() {
+  const refreshToken = localStorage.getItem("refresh_token");
+  if (refreshToken) {
+ 
+    window.location.href = "./dashboard.html";
+    return;
+  }
+  
 
+}
 
