@@ -708,7 +708,7 @@ body::-webkit-scrollbar {
 }
 
 .note-edit-container {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 100vh;
@@ -979,5 +979,8 @@ body::-webkit-scrollbar {
   }
   .login-section .login .right .container{
     width: 300px;
+  }
+  .note-edit-container > div{
+    width: 90%;
   }
 }
