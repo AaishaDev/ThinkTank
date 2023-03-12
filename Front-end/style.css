@@ -21,7 +21,7 @@
   /* height: 10vh; */
   padding: 1rem 1rem;
   border-radius: 4px;
-  position: absolute;
+  position: fixed;
   top: 5%;
   right: 15px;
   color: white;
