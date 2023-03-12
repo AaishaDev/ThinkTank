@@ -101,7 +101,7 @@ document.getElementById("login-section").addEventListener("click", (event) => {
 // SignUp Request to backend
 async function signUpRequest(data) {
   try {
-    const res = await fetch("http://localhost:5000/register", {
+    const res = await fetch("https://thinktank.onrender.com//register", {
       method: "POST",
       credentials :"include",
       headers: {
@@ -123,7 +123,7 @@ async function signUpRequest(data) {
 async function loginRequest(data, e) {
 
   try {
-    const res = await fetch("http://localhost:5000/auth", {
+    const res = await fetch("https://thinktank.onrender.com//auth", {
       method: "POST",
       credentials :"include",
       headers: {

@@ -66,7 +66,7 @@
         e.target.innerHTML = `<span class="progress material-symbols-outlined">
   magic_exchange
   </span>`;
-        const res = await fetch("http://localhost:5000/notes", {
+        const res = await fetch("https://thinktank.onrender.com//notes", {
           method: "POST",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -80,7 +80,7 @@
         // For refreshing access token
         if (res.status === 403) {
           const refreshToken = localStorage.getItem("refresh_token");
-          const refreshRes = await fetch("http://localhost:5000/refresh", {
+          const refreshRes = await fetch("https://thinktank.onrender.com//refresh", {
             method: "POST",
             credentials: "include",
             headers: {
@@ -100,7 +100,7 @@
           token = localStorage.getItem("access_token");
         
 
-          const res = await fetch("http://localhost:5000/notes", {
+          const res = await fetch("https://thinktank.onrender.com//notes", {
             method: "POST",
             headers: {
               Authorization: `Bearer ${token}`,
@@ -135,7 +135,7 @@
           return;
         }
 
-        const res = await fetch(`http://localhost:5000/notes/${id}/favorite`, {
+        const res = await fetch(`https://thinktank.onrender.com//notes/${id}/favorite`, {
           method: "PUT",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -156,7 +156,7 @@
         // For refreshing access token
         if (res.status === 403) {
           const refreshToken = localStorage.getItem("refresh_token");
-          const refreshRes = await fetch("http://localhost:5000/refresh", {
+          const refreshRes = await fetch("https://thinktank.onrender.com//refresh", {
             method: "POST",
             credentials: "include",
             headers: {
@@ -177,7 +177,7 @@
         
 
           const res = await fetch(
-            `http://localhost:5000/notes/${id}/favorite`,
+            `https://thinktank.onrender.com//notes/${id}/favorite`,
             {
               method: "PUT",
               headers: {
@@ -195,7 +195,7 @@
       async function getAllNotes() {
         let token = localStorage.getItem("access_token");
 
-        const res = await fetch("http://localhost:5000/notes", {
+        const res = await fetch("https://thinktank.onrender.com//notes", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -203,7 +203,7 @@
 
         if (res.status === 403) {
           const refreshToken = localStorage.getItem("refresh_token");
-          const refreshRes = await fetch("http://localhost:5000/refresh", {
+          const refreshRes = await fetch("https://thinktank.onrender.com//refresh", {
             method: "POST",
             credentials: "include",
             headers: {
@@ -223,7 +223,7 @@
           token = localStorage.getItem("access_token");
          
 
-          const res = await fetch("http://localhost:5000/notes", {
+          const res = await fetch("https://thinktank.onrender.com//notes", {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -458,7 +458,7 @@
           return;
         }
 
-        const res = await fetch(`http://localhost:5000/notes/${editId}/edit`, {
+        const res = await fetch(`https://thinktank.onrender.com//notes/${editId}/edit`, {
           method: "PUT",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -472,7 +472,7 @@
         // For refreshing access token
         if (res.status === 403) {
           const refreshToken = localStorage.getItem("refresh_token");
-          const refreshRes = await fetch("http://localhost:5000/refresh", {
+          const refreshRes = await fetch("https://thinktank.onrender.com//refresh", {
             method: "POST",
             credentials: "include",
             headers: {
@@ -493,7 +493,7 @@
           
 
           const res = await fetch(
-            `http://localhost:5000/notes/${editId}/edit`,
+            `https://thinktank.onrender.com//notes/${editId}/edit`,
             {
               method: "PUT",
               headers: {
@@ -525,7 +525,7 @@
 
         let token = localStorage.getItem("access_token");
 
-        const res = await fetch(`http://localhost:5000/notes/${id}/delete`, {
+        const res = await fetch(`https://thinktank.onrender.com//notes/${id}/delete`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -538,7 +538,7 @@
         // For refreshing access token
         if (res.status === 403) {
           const refreshToken = localStorage.getItem("refresh_token");
-          const refreshRes = await fetch("http://localhost:5000/refresh", {
+          const refreshRes = await fetch("https://thinktank.onrender.com//refresh", {
             method: "POST",
             credentials: "include",
             headers: {
@@ -558,7 +558,7 @@
           token = localStorage.getItem("access_token");
         
 
-          const res = await fetch(`http://localhost:5000/notes/${id}/delete`, {
+          const res = await fetch(`https://thinktank.onrender.com//notes/${id}/delete`, {
             method: "DELETE",
             headers: {
               Authorization: `Bearer ${token}`,
@@ -595,7 +595,7 @@
         }
         let token = localStorage.getItem("access_token");
 
-        const res = await fetch(`http://localhost:5000/notes/username`, {
+        const res = await fetch(`https://thinktank.onrender.com//notes/username`, {
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
